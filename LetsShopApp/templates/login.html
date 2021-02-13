@@ -8,6 +8,7 @@
 {% block body %}
     <div class="container1">
         <form action="/login" method="post">
+            {% csrf_token %}
             <div class="row1">
             <h2 style="text-align:center">Login</h2>
             <div class="vl">
@@ -46,7 +47,7 @@
             <a href="/signup" style="color:white" class="btn">Sign up</a>
             </div>
             <div class="col1">
-            <a href="/forgot" style="color:white" class="btn">Forgot password?</a>
+            <a href="/password_reset" style="color:white" class="btn">Forgot password?</a>
             </div>
         </div>
     </div>
